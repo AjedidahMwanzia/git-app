@@ -9,12 +9,16 @@ import { ApiService } from '../api.service';
   styleUrls: ['./github-app.component.css']
 })
 export class GithubAppComponent implements OnInit {
-  public querygithubUserQuery!: string;
+  public githubUserQuery!: string;
   public githubProfile:any;
   public githubRepos!: any[]; 
-  constructor(ApiService :ApiService, ) { }
-
+ 
+  constructor(ApiService :ApiService ) {}
+   
+   
   ngOnInit(): void {
   }
 
 }
+
+
