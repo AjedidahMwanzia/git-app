@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user'
+import { ApiService } from '../api.service';
+
 
 @Component({
   selector: 'app-github-app',
@@ -6,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./github-app.component.css']
 })
 export class GithubAppComponent implements OnInit {
-
-  constructor() { }
+  public querygithubUserQuery!: string;
+  public githubProfile:any;
+  public githubRepos!: any[]; 
+  constructor(ApiService :ApiService, ) { }
 
   ngOnInit(): void {
   }
