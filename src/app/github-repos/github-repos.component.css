@@ -1,5 +1,5 @@
 *{
-    color: white;
+  color:white;  
 }
 form{
     display: flex;
@@ -32,4 +32,22 @@ input::placeholder{
 ul li{
     list-style: none;
     padding-bottom: 1vw;
+}
+a{
+    color: #53a5fc;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+ul {
+    border-top: 0.1vw solid #21262d;
+    border-bottom: 0.1vw solid #21262d; 
+}
+span{
+    list-style-type: circle
+}
+a:hover{
+    text-decoration: underline;
 }

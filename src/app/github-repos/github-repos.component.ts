@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { ApiService } from '../api.service';
-import { User } from '../user';
+import { Repos } from '../repos';
 
 
 @Component({
@@ -12,7 +12,7 @@ import { User } from '../user';
 export class GithubReposComponent implements OnInit {
   username!: any;
   repos:any =[]
-  
+  repo!: Repos[];
  name = new FormControl('AjedidahMwanzia')
 
   constructor( private ApiService :ApiService ) {}
