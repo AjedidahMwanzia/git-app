@@ -9,6 +9,7 @@ import { GithubAppComponent } from './github-app/github-app.component';
 import { GithubProfileDataComponent } from './github-profile-data/github-profile-data.component';
 import { GithubReposComponent } from './github-repos/github-repos.component';
 import { GithubPipePipe } from './github-pipe.pipe';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GithubPipePipe } from './github-pipe.pipe';
     GithubAppComponent,
     GithubProfileDataComponent,
     GithubReposComponent,
-    GithubPipePipe
+    GithubPipePipe,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
