@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import { User } from '../user';
 
 
 @Component({
@@ -9,19 +10,22 @@ import { ApiService } from '../api.service';
 })
 export class GithubAppComponent implements OnInit {
   Username!: string;
-  githubProfile:any;
-  githubRepos!: any[]; 
- 
   
+ 
+ Users:any = ''
 
   constructor( private ApiService :ApiService ) {}
-  getUsername(){
+  getUsername():void{
+   this.ApiService.getUsername('AjedidahMwanzia').then((users:any)=>{
+     this.Users = users
     
+   })
   }
-   
+
     
   ngOnInit(): void {
-   
+   this.getUsername()
+ 
   }
 
 }

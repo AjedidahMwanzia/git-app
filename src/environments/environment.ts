@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  Accesstoken:'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'
+  Accesstoken:'https://api.github.com/users/ + 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'
 };
 
 /*

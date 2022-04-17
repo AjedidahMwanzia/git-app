@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,24 +13,21 @@ export class ApiService {
  
  //for github profile
 
- getUsername(username:any){
-    let url= `https://api.github.com/users/${username}`;
+ getUsername(username:string):any{
+   const promise = new Promise((resolve,reject)=>{
+    resolve( this.http.get(`https://api.github.com/users/${username}`).toPromise())
+   }) 
+   return promise
 
-    return this.http.get(url)
-    
+   
   }
 
-  //for github repositories
-  getRepos(username:any){
-    let url= `https://api.github.com/users/${username}/repos`;
-
-    return this.http.get(url)
-    
+ 
   }
 
 
 
-}
+
 
 
 
