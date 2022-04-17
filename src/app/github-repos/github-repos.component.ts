@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
+import { User } from '../user';
+
 
 @Component({
   selector: 'app-github-repos',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubReposComponent implements OnInit {
 
-  constructor() { }
+  repos:any =[]
 
+  constructor( private ApiService :ApiService ) {}
+  getRepo():void{
+   this.ApiService.getRepo('AjedidahMwanzia').then((repos:any)=>{
+     this.repos = repos
+    console.log(this.repos)
+   })
+  }
+
+    
   ngOnInit(): void {
+   this.getRepo()
+ 
   }
 
 }
+

@@ -21,6 +21,14 @@ export class ApiService {
 
    
   }
+  getRepo(username:string):any{
+    const promise = new Promise((resolve,reject)=>{
+     resolve( this.http.get(`https://api.github.com/users/${username}`).toPromise())
+    }) 
+    return promise
+ 
+    
+   }
 
  
   }
