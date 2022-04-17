@@ -2,11 +2,12 @@
     <div class="navbar">
         <h1><i class="fa-brands fa-github"></i> &nbsp;Github User Search</h1>
     </div>
-    <div class="form1">
-        <form  >
+    <div class="form1" >
+        <form  (submit)="getUsername()" >
             <div class="text">
-              <input type="text" [(ngModel)]="githubUserQuery" name="user"  placeholder="Github User" required class="">&nbsp;&nbsp;
+              <input type="text" [(ngModel)]="Username" name="user"  placeholder="Github User" required class="">&nbsp;&nbsp;
             </div>
+           
             <div id="search">
               <input type="submit" value="Search">
             </div>

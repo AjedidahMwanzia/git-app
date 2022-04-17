@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../user'
 import { ApiService } from '../api.service';
 
 
@@ -9,16 +8,27 @@ import { ApiService } from '../api.service';
   styleUrls: ['./github-app.component.css']
 })
 export class GithubAppComponent implements OnInit {
-  public githubUserQuery!: string;
-  public githubProfile:any;
-  public githubRepos!: any[]; 
+  Username!: string;
+  githubProfile:any;
+  githubRepos!: any[]; 
  
-  constructor(ApiService :ApiService ) {}
+  
+
+  constructor( private ApiService :ApiService ) {}
+  getUsername(){
+    
+  }
    
-   
+    
   ngOnInit(): void {
+   
   }
 
 }
+
+
+
+
+
 
 
