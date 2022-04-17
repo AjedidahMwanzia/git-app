@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { ApiService } from '../api.service';
+
 
 
 
@@ -9,16 +11,10 @@ import { ApiService } from '../api.service';
   styleUrls: ['./github-app.component.css']
 })
 export class GithubAppComponent implements OnInit {
-  Username!: any;
-  
- 
- 
 
+  
   constructor( private ApiService :ApiService ) {}
   
-  
-  
-
   ngOnInit(): void {
   }
 

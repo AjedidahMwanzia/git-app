@@ -1,8 +1,20 @@
-
-<div>
-    <ul *ngFor="let repo of repos">
-        <a href="{{repo.html_url}}"target="_blank">{{repo.name}}</a> {{repo.name}}
+<div class="form1" >
+    <form (submit)="searchRepos()" >
+        <div class="text">
+          <input type="text" placeholder="Your Github User" required class="">&nbsp;&nbsp;
+        </div>
        
+        <div id="search">
+          <input type="submit" value="Search">
+        </div>
+    </form>
+</div> 
+<div class="new1">
+    <ul *ngFor="let repo of repos">
+        <a href="{{repo}}"target="_blank">{{repo.name}}</a> {{repo.name}}
+       <li> {{repo.description}}</li>
+       <li> {{repo.topics}}</li>
+       <li> {{repo.created}}</li>
 
     </ul>
 </div>

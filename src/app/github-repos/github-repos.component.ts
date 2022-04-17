@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { ApiService } from '../api.service';
 import { User } from '../user';
 
@@ -9,22 +10,27 @@ import { User } from '../user';
   styleUrls: ['./github-repos.component.css']
 })
 export class GithubReposComponent implements OnInit {
-
+  username!: any;
   repos:any =[]
+  
+ name = new FormControl('AjedidahMwanzia')
 
   constructor( private ApiService :ApiService ) {}
-  getRepo():void{
-   this.ApiService.getRepo('AjedidahMwanzia').then((repos:any)=>{
+  getRepo(username:string):void{
+   this.ApiService.getRepo(username).then((repos:any)=>{
      this.repos = repos
-    console.log(this.repos)
    })
   }
-
+ searchRepos(){
+ this.getRepo(this.name.value)
+   return false
+   
+ }
     
-  ngOnInit(): void {
-   this.getRepo()
- 
-  }
+ ngOnInit(): void {
+
+
+ }
 
 }
 
