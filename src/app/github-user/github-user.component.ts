@@ -16,7 +16,7 @@ export class GithubUserComponent implements OnInit {
   getUsername():void{
    this.ApiService.getUsername('AjedidahMwanzia').then((users:any)=>{
      this.Users = users
-    console.log(this.Users)
+    // console.log(this.Users)
    })
   }
 
