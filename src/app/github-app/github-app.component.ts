@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
-import { User } from '../user';
+
 
 
 @Component({
@@ -9,23 +9,17 @@ import { User } from '../user';
   styleUrls: ['./github-app.component.css']
 })
 export class GithubAppComponent implements OnInit {
-  Username!: string;
+  Username!: any;
   
  
- Users:any = ''
+ 
 
   constructor( private ApiService :ApiService ) {}
-  getUsername():void{
-   this.ApiService.getUsername('AjedidahMwanzia').then((users:any)=>{
-     this.Users = users
-    
-   })
-  }
+  
+  
+  
 
-    
   ngOnInit(): void {
-   this.getUsername()
- 
   }
 
 }
@@ -35,4 +29,10 @@ export class GithubAppComponent implements OnInit {
 
 
 
+
+
+
+function ngOnInit() {
+  throw new Error('Function not implemented.');
+}
 

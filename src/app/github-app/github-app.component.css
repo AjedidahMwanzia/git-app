@@ -34,3 +34,6 @@ form{
 input::placeholder{
     color: white;
 }
+ul li{
+    color: white;
+}
