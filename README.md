@@ -1,5 +1,16 @@
 # GitApp
 
+##### By Ajedidah Mwanzia 
+
+## Table of Content
+
++ [Description](#description)
++ [Installation Requirement](#Installation)
++ [Technology Used](#technology-used)
++ [Reference](#reference)
++ [License](#license)
++ [Authors Info](#author-Info)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
 ## Development server
@@ -25,3 +36,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Licence
+MIT License:
+Copyright (c) 2022 Ajedidah Mwanzia
+
+## Authors Info
+
+-   Email- [Ajedidah Mwanzia](mailto:ajedidah.mwanzia@student.moringaschool.com)
+-   Linkedin - [Ajedidah Mwanzia](https://www.linkedin.com/in/ajedidah-mwanzia/)
+-   Portfolio - [Ajedidah Mwanzia](https://ajedidahmwanzia.github.io/portfolio/)
+
+
+[Go Back to the top](#GitApp)
