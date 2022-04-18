@@ -1,10 +1,30 @@
-.navbar h1{
+.navbar{
     background-color: #161b22;
     width: 100%;
     padding-top: 0.7vw;
     padding-bottom: 0.6vw;
     padding-left: 1vw;
     color: white;
+    display: flex;
+    padding-right: 1vw;
+    margin-bottom: 2vw;
+}
+.navbar h1{
+    background-color: transparent;
+}
+.link a{
+    text-decoration: none;
+    padding-top:1vw ;
+    padding-right: 3vw;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 700;
+   
+}
+.link{
+    margin-top: 0.7vw;
+    background-color: transparent;
+    margin-left: 15vw;
 }
 form{
     display: flex;
@@ -94,4 +114,21 @@ input::placeholder{
     text-align: center;
     margin-top: 2vw;
     margin-bottom: 2vw;
+}
+.data1{
+    color: white;
+    margin-top: 8vw;
+    margin-left: 8vw;
+}
+.data{
+    margin-left: 10vw;
+}
+.data1 p{
+    padding-bottom: 1vw;
+    text-align: center;
+}
+.profile{
+    display: flex;
+    margin-bottom: 2vw;
+    
 }

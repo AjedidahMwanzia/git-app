@@ -1,15 +1,21 @@
 <div class="container">  
     <div class="navbar">
         <h1><i class="fa-brands fa-github"></i> &nbsp;Github User Search</h1>
+        <div class="link">
+          <a href="#users">Users</a>
+          <a href="#repos">Repos</a>
+        </div>
+     </div>
     </div>
-<div class=" row">
-  <div class="column1">
-    <app-github-user  ></app-github-user>
-  </div>
-  <div class="column2">
-    <app-github-repos ></app-github-repos>
-  </div>
- 
+<div class="profile">
+<div class="data">
+      <img  style="height:auto; border-radius: 50%; border: 0.1vw solid grey;margin-left:13vw;margin-top: 3vw;" alt="Avatar" width="240" height="240"   src="../../assets/jeddy.png"> 
+</div>
+<div class="data1">
+ <p>Username:&ensp; AjedidahMwanzia</p> 
+ <p> Bio: &ensp;If you can imagine it you can have it</p>
+ <p> 35 followers &ensp;&ensp;25 following</p>
+ </div>
 </div>
 <div class="auto">
   <img  height="150rem" width="auto"src="https://github-readme-stats.vercel.app/api?username=AjedidahMwanzia&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/> 
@@ -21,8 +27,8 @@
 </div>
 <div class="repos">
     <div class="card">
-      <h4>Hello-World</h4>
-      <p>first experience</p>
+      <h4>quote-generator </h4>
+      <p>A web application made using Angular where users can create quotes and have those quotes voted on whether they are inspirational or not.</p>
       <div class="language">
         <li>css</li>
         <li>Html</li>
@@ -66,6 +72,15 @@
   <a href="mailto:fajedidah@gmail.com" target="_blank" style="margin-right: 2%;"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a> &nbsp;
   <a href="https://www.linkedin.com/in/ajedidah-mwanzia/" target="_blank" style="margin-right: 2%;"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> &nbsp;
   <a href="https://twitter.com/AjedidahMwanzi" target="_blank" style="margin-right: 2%;"><img src="https://img.shields.io/badge/@AjedidahMwanzi-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" target="_blank"></a> &nbsp;
+  </div>
+  <div id="users" class=" row">
+    <div class="column1">
+      <app-github-user  ></app-github-user>
+    </div>
+    <div id="repos" class="column2">
+      <app-github-repos ></app-github-repos>
+    </div>
+   
   </div>
 </div>
 <div class="footer">
