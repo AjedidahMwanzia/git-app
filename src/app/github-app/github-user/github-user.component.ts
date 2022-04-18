@@ -22,7 +22,7 @@ export class GithubUserComponent implements OnInit {
  getUser(username:string):void{
  this.ApiService.getUser(username).then ((users:any)=>{
 
-this.user = new User(users.login,users.avatar_url,users.gravatar_id,users.name,users.blog,users.login,users.location,users.followers,users.following,users.bio,users.id)
+this.user = new User(users.name,users.login,users.avatar_url,users.blog,users.location,users.followers,users.following,users.bio,users.id)
  console.log(this.user)
 })
   }
@@ -31,11 +31,11 @@ this.user = new User(users.login,users.avatar_url,users.gravatar_id,users.name,u
     this.getUser(username)
     return false
   }
-  
+
      
  ngOnInit(): void {
 
-
+  console.log(typeof this.user)
  }
 
 }

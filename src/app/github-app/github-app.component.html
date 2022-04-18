@@ -2,29 +2,80 @@
     <div class="navbar">
         <h1><i class="fa-brands fa-github"></i> &nbsp;Github User Search</h1>
     </div>
-   <div class=" row">
-      <div class="column1">
-        <app-github-user  ></app-github-user>
-      </div>
-      <div class="column2">
-        <app-github-repos ></app-github-repos>
-      </div>
-    
+    <!-- <div class="form1" >
+      <form  (submit)="searchRepos()">
+          <div class="text">
+            <input [formControl]="name" type="text" placeholder="Your Github Username" required class="">&nbsp;&nbsp;
+          </div>
+         
+          <div id="search">
+            <input type="submit" value="Search">
+          </div>
+      </form>
+  </div> -->
+
+<div class=" row">
+  <div class="column1">
+    <app-github-user  ></app-github-user>
+  </div>
+  <div class="column2">
+    <app-github-repos ></app-github-repos>
+  </div>
+ 
+</div>
+<div class="header">
+  <h3>Popular Repositories</h3>
+</div>
+<div class="repos">
+    <div class="card">
+      <h4>Hello-World</h4>
+      <p>first experience</p>
+      <div class="language">
+        <li>css</li>
+        <li>Html</li>
+        <li>Javascript</li>
     </div>
-<!-- <div class="repos">
-  <h1>Popular Repositories</h1>
-  <div class="card">
-    <h4>Hello-World</h4>
-    <p>first experience</p>
- </div>
- <div class="card">
-  <h4>Akan-Names</h4>
-  <p>first experience</p>
-  <li>language</li>
- </div>
- <div class="card">display</div>
+    </div>
+    <div class="card">
+      <h4>Akan-Names</h4>
+      <p>A web application that allows the user to input their date of birth and gender and it returns an akan name depending on the day of the week they were born</p>
+      <div class="language">
+        <li>css</li>
+        <li>Html</li>
+        <li>Javascript</li>
+    </div>
+    </div>
+    <div class="card">
+      <h4>Delani Studio</h4>
+      <p>This project involves recreating the landing page of a studio known as Delani Studio.</p>
+      <div class="language">
+          <li>css</li>
+          <li>Html</li>
+          <li>Javascript</li>
+      </div>
+    </div>
+</div>
 
+ 
 
-</div> -->
-
-  
+  <div class="frame" style="display: inline_block;color: white;align-items: center;"><br>
+    <h3 style="text-align: center;"> Languages and Frameworks</h3>
+    <img alt="AjedidahMwanzia-HTML" height="30" width="40" style="margin-right: 2%;"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> 
+    <img  alt="AjedidahMwanzia-CSS" height="30" width="40" style="margin-right: 2%;"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+    <img  alt="Samuel-Martins-Js" height="30" width="40" style="margin-right: 2%;" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+    <img  alt="Samuel-Martins-Ts" height="30" width="40" style="margin-right: 2%;" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+    <img alt="Samuel-Martins-Angular" height="30" width="40" style="margin-right: 2%;"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg"> 
+    
+</div>
+<div>
+  <div class="contact"  align="center"> 
+    <h3 style="color: white;">Connect With Me</h3> 
+  <a href="mailto:fajedidah@gmail.com" target="_blank" style="margin-right: 2%;"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a> &nbsp;
+  <a href="https://www.linkedin.com/in/ajedidah-mwanzia/" target="_blank" style="margin-right: 2%;"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> &nbsp;
+  <a href="https://twitter.com/AjedidahMwanzi" target="_blank" style="margin-right: 2%;"><img src="https://img.shields.io/badge/@AjedidahMwanzi-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" target="_blank"></a> &nbsp;
+  </div>
+</div>
+<div class="footer">
+  <p> copyright &copy; 2022| All Rights
+    Reserved</p> 
+</div>

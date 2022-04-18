@@ -41,5 +41,41 @@ input::placeholder{
 .commits img{
     margin-top: 12vw;
     display: inline-block;
-    margin-left: 12vw;
+    margin-left: 10vw;
 }
+.repos {
+    display: flex;
+    color: white;
+    width: 100%;
+    justify-content: space-around;
+}
+.header {
+    text-align: center;
+    color: white;
+    margin-bottom: 3vw;
+}
+.card{
+    border: 0.1vw solid grey;
+    width: 25%;
+    padding: 1vw;
+    border-radius: 0.8vw;
+}
+.card h4{
+    color: #53a5fc;
+    padding-bottom: 0.5vw;
+}
+.langauge {
+    text-align: center;
+}
+.contact h3{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.frame img{
+    margin-left:12vw;
+    justify-content: space-around;
+}
+.frame h3{
+    margin-bottom: 2vw;
+}
+  
