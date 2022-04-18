@@ -19,6 +19,7 @@
     font-size: 1.5vw;
     color: white;
     font-weight: 700;
+    background-color: transparent;
    
 }
 .link{
@@ -121,7 +122,7 @@ input::placeholder{
     margin-left: 8vw;
 }
 .data{
-    margin-left: 10vw;
+    margin-left: 12vw;
 }
 .data1 p{
     padding-bottom: 1vw;
