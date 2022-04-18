@@ -18,32 +18,22 @@ export class GithubUserComponent implements OnInit {
  name = new FormControl('',Validators.required)
 
   constructor( private ApiService :ApiService ) {}
-//   getUsername(username:string):void{
-//    this.ApiService.getUsername(username).then((users:any)=>{
-//      this.user = users
-//    })
-//   }
 
- getUser():void{
- this.ApiService.getUser('AjedidahMwanzia').then ((users:any)=>{
-//  this.users=users
+ getUser(username:string):void{
+ this.ApiService.getUser(username).then ((users:any)=>{
+
 this.user = new User(users.login,users.name,users.blog,users.html_url,users.location,users.followers,users.following,users.bio,users.id)
-// console.log(this.users)
-//  console.log(this.user)
+ console.log(this.user)
 })
   }
-  
-//  searchUsers(){
-//  let username = this.name.value
-//  this.getUsername(username)
-
-//    return false
-   
-//  }
-
-    
+  searchUsers(){
+    let username =this.name.value
+    this.getUser(username)
+    return false
+  }
+     
  ngOnInit(): void {
-this.getUser()
+
 
  }
 
