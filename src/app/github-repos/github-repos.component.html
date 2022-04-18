@@ -1,7 +1,7 @@
 <div class="form1" >
     <form (submit)="searchRepos()" >
         <div class="text">
-          <input type="text" placeholder="Your Github User" required class="">&nbsp;&nbsp;
+          <input [formControl]="name" type="text" placeholder="Your Github User" required class="">&nbsp;&nbsp;
         </div>
        
         <div id="search">

@@ -13,7 +13,7 @@ export class GithubReposComponent implements OnInit {
   username!: any;
   repos:any =[]
   repo!: Repos[];
- name = new FormControl('AjedidahMwanzia')
+ name = new FormControl()
 
   constructor( private ApiService :ApiService ) {}
   getRepo(username:string):void{
@@ -22,7 +22,9 @@ export class GithubReposComponent implements OnInit {
    })
   }
  searchRepos(){
- this.getRepo(this.name.value)
+   let username = this.name.value
+ this.getRepo(username)
+
    return false
    
  }
