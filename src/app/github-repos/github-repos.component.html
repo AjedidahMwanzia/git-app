@@ -9,10 +9,10 @@
         </div>
     </form>
 </div> 
-<div class="new1">
-    <ul *ngFor="let repo of repos">
-        <a href="{{repo.html_url}}"target="_blank">{{repo.name}} </a><br><br>
-       <li> {{repo.description}}</li>
+<div class="new1" >
+    <ul appHighlight *ngFor="let repo of repos">
+      <li > <a href="{{repo.html_url}}"target="_blank">{{repo.name}} </a><br><br></li> 
+       <li > {{repo.description}}</li>
        <li id="topic" > {{repo.topics}}&ensp;&ensp; <span style=" color: #53a5fc; ;">updated: {{repo.created_at|dateAgo}}</span> </li>
       
 
