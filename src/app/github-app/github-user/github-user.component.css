@@ -34,3 +34,8 @@ input::placeholder{
   text-align: center;
   padding: 1vw;
 }
+.commits img{
+    padding-left: 5vw;
+    margin-bottom: 2vw;
+    margin-top: -3vw;
+}

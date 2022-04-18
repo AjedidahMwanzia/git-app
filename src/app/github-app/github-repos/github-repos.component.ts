@@ -13,6 +13,7 @@ export class GithubReposComponent implements OnInit {
   username!: any;
   repos:any =[]
   
+  
 
  name = new FormControl('',Validators.required)
 
