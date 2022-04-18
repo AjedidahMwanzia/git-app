@@ -29,3 +29,7 @@ form{
 input::placeholder{
     color: white;
 }
+.list li{
+  text-align: center;
+  padding: 1vw;
+}
