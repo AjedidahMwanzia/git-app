@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { ApiService } from '../api.service';
-import { User } from '../user';
+import { ApiService } from '../../api.service';
+import { User } from '../../user';
 
 
 @Component({
