@@ -13,7 +13,7 @@ export class ApiService {
  
  //for github profile
 
- getUsername(username:string):any{
+ getUser(username:string):any{
    const promise = new Promise((resolve,reject)=>{
     resolve( this.http.get(`https://api.github.com/users/${username}`).toPromise())
    }) 
@@ -21,6 +21,8 @@ export class ApiService {
 
    
   }
+  //for github repos
+  
   getRepo(username:string):any{
     const promise = new Promise((resolve,reject)=>{
      resolve( this.http.get(`https://api.github.com/users/${username}/repos`).toPromise())

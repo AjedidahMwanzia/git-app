@@ -1,8 +1,8 @@
 export class User {
-    constructor(public firstName:string,public lastName:string,public userName:string, public id:number){
-        this.firstName=firstName
-        this.lastName = lastName
+    constructor(public name:string,public html_url:any,public userName:string,public blog:string,public location:string,public followers:number,public following:number,public bio:string, public id:number){
+        this.name =name
         this.userName = userName
         this.id =id
+        
     }
 }

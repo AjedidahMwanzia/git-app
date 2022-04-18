@@ -1,1 +1,22 @@
-<p>github-user works!</p>
+<div class="form2" >
+  <form >
+      <div class="text">
+        <input  type="text" placeholder="Your Github Username" required class="">&nbsp;&nbsp;
+      </div>
+     
+      <div id="search">
+        <input type="submit" value="Search">
+      </div>
+  </form>
+</div> 
+
+ <div>
+    <ol >
+        <li>{{user.name}}</li>
+        <li>{{user.bio}}</li>
+        <li ><i class="fa-solid fa-user-group"></i>&nbsp;&nbsp;{{user.followers}}&nbsp;&nbsp;followers.&nbsp;&nbsp;{{user.following}}&nbsp;following</li>
+        <li><a href="{{user.blog}}">{{user.blog}}</a></li>
+        <li><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;{{user.location}}</li>
+
+    </ol>
+</div> 

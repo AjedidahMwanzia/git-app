@@ -1,0 +1,31 @@
+*{
+    color:white;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vw;
+    margin-left: 5vw;
+    padding: 1vw;
+}
+#search input{
+    width: 10vw;
+    padding: 0.5vw;
+    border-radius: 0.7vw;
+    outline: none;
+    border: 0.1vw solid grey;
+    color: white;
+    box-shadow: 1vw 1vw #0d1117;
+    
+}
+.text input{
+    color: white;
+    padding: 0.5vw;
+    width: 30vw;
+    border: 0.1vw solid grey;
+    border-radius: 0.7vw;
+   
+}
+input::placeholder{
+    color: white;
+}

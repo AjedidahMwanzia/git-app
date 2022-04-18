@@ -6,7 +6,7 @@
     padding-left: 1vw;
     color: white;
 }
-/* form{
+form{
     display: flex;
     flex-direction: row;
     margin-top: 2vw;
@@ -33,7 +33,7 @@
 }
 input::placeholder{
     color: white;
-} */
+}
 .row{
     display: flex;
     width: 100%;
