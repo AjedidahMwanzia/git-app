@@ -22,7 +22,7 @@ export class GithubUserComponent implements OnInit {
  getUser(username:string):void{
  this.ApiService.getUser(username).then ((users:any)=>{
 
-this.user = new User(users.login,users.name,users.blog,users.login,users.location,users.followers,users.following,users.bio,users.id)
+this.user = new User(users.login,users.avatar_url,users.name,users.blog,users.login,users.location,users.followers,users.following,users.bio,users.id)
  console.log(this.user)
 })
   }
