@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input,Output,EventEmitter,OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { ApiService } from '../../api.service';
 import { Repos } from '../../repos';
@@ -12,8 +12,8 @@ import { Repos } from '../../repos';
 export class GithubReposComponent implements OnInit {
   username!: any;
   repos:any =[]
-  repo!: Repos[];
- @Input()githubRepos:any;
+  
+
  name = new FormControl('',Validators.required)
 
   constructor( private ApiService :ApiService ) {}

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { ApiService } from '../../api.service';
 import { User } from '../../user';
@@ -13,7 +13,7 @@ export class GithubUserComponent implements OnInit {
   
   users:any= []
   user!: User;
-
+ 
 
  name = new FormControl('',Validators.required)
 
