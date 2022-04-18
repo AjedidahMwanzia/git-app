@@ -12,11 +12,12 @@
 
  <div class="list">
     <ol >
+       <li>{{user.login}}</li>
         <li>{{user.name}}</li>
         <li>{{user.bio}}</li>
-        <li ><i class="fa-solid fa-user-group"></i>&nbsp;&nbsp;{{user.followers}}&nbsp;&nbsp;followers.&nbsp;&nbsp;{{user.following}}&nbsp;following</li>
+        <li >{{user.followers}}&nbsp;&nbsp;followers.&nbsp;&nbsp;{{user.following}}&nbsp;following</li>
         <li><a href="{{user.blog}}">{{user.blog}}</a></li>
-        <li><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;{{user.location}}</li>
+        <li>{{user.location}}</li>
 
     </ol>
 </div> 
